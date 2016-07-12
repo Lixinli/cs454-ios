@@ -24,8 +24,8 @@ class HistoryViewController: UIViewController {
         let CellID = "HistoryCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(CellID, forIndexPath: indexPath)
         let match = self.history[indexPath.row]
-        cell.textLabel!.text = victoryStatusDescription(match)
-        cell.detailTextLabel!.text = "\(match.p1) vs. \(match.p2)"
+        cell.textLabel?.text = victoryStatusDescription(match)
+        cell.detailTextLabel?.text = "\(match.p1) vs. \(match.p2)"
         return cell
     }
     
